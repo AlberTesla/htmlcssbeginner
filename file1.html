@@ -5,43 +5,57 @@
             Test Title
         </title>
         <style>
-            .paragraph {
-                color : red;
-                display: inline;
+            .subButton{
+                background-color : rgb(185, 6, 6);
+                color : white;
+                border-color: transparent;
+                border-radius: 4px;
+                cursor:grab;
+                margin-right : 10px;
+                height : 36px;
+                width : 105px;
             }
-            .testbutton{
-                color : red;
-                display: block;
-                background-color: blue;
-                border: 10px;
-                padding : 10px;
-                margin : 20px;
-                border-radius: 20px;
+            .subButton:hover{
+                opacity: .5;
             }
-            .testbutton:hover{
-                color : green;
-                display: block;
-                background-color: pink;
-                border: 10px;
-                padding : 10px;
-                margin : 20px;
-                border-radius: 20px;
+            .subButton:active{
+                background-color : black;
             }
-            .testbutton:active{
-                color : blue;
-                display: block;
-                background-color: red;
-                border: 10px;
-                padding : 10px;
-                margin : 20px;
-                border-radius: 20px;
+            .joinButton{
+                background-color : white;
+                color : rgb(0, 0, 190);
+                border-color: rgb(0, 0, 190);
+                border-radius: 4px;
+                border-width: 1px;
+                cursor: crosshair;
+                border-style: solid;
+                height:36px;
+                width:70px;
+            }
+            .tweetButton{
+                background-color : rgb(0, 102, 255);
+                color : white;
+                font-weight:bold;
+                border-color:transparent;
+                border-radius: 18px;
+                border-width: 4px;
+                font-size:15px;
+                cursor: crosshair;
+                height:36px;
+                width:74px;
+                margin-left: 8px;
             }
         </style>
     </head>
     <body>
-        <div class="paragraph">
-            this is test para
-        </div>
-        <button class="testbutton">testbutton</button>
+        <button class="subButton">
+            SUBSCRIBE
+        </button>
+        <button class="joinButton">
+            JOIN
+        </button>
+        <button class="tweetButton">
+            Tweet
+        </button>
     </body>
 </html>
