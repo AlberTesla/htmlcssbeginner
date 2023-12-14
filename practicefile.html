@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Practice</title>
+        <style>
+            .grid {
+                display: grid;
+                grid-template-columns : 100px 100px;
+                margin-bottom: 30px;
+            }
+            .div1 {
+                background-color: rgb(241, 100, 100);
+            }
+            .div2 {
+                background-color: rgb(128, 226, 128);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="div1">div1</div>
+            <div class="div2">div2</div>
+        </div>
+
+        <div style="display: grid;
+        grid-template-columns: 100px 100px;
+        margin-bottom: 30px;" class="grid1">
+            <div style="background-color: lightcoral;" class="100px">100px</div>
+            <div style="background-color: rgb(128, 208, 240);" class="100px">100px</div>
+        </div>
+
+        <div style="display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        margin-bottom: 30px;" class="grid2">
+            <div style="background-color: lightcoral;" class="new">div1</div>
+            <div style="background-color: rgb(128, 208, 240);" class="new1">div2</div>
+            <div style="background-color: rgb(240, 128, 212);" class="new1">div2</div>
+        </div>
+    </body>
+</html>
