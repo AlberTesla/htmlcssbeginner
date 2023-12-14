@@ -1,0 +1,62 @@
+p{
+    font-family: 'Roboto';
+    font-family: Arial;
+}
+.videoTitle{
+    font-weight: bold;
+    font-size: 18px;
+    width : 300px;
+    font-family: 'Roboto';
+    line-height: 26px;
+    
+}
+.viewCount{
+    font-weight: bold;
+    font-size: 18px;
+    width : 300px;
+    line-height: 20px;
+    font-family: 'Roboto';
+}
+.author{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    width : 300px;
+    line-height: 20px;
+    font-family: 'Roboto';
+}
+.info{
+    font-size: 16px;
+    width : 300px;
+    line-height: 20px;
+    color : rgb(88, 81, 81);
+    transition: width 1s;
+    font-family: 'Roboto';
+}
+.info:hover{
+    width : 40px;
+}
+.info:active{
+    width : 1000px;
+    transition: width 1s;
+}
+.logo {
+    width: 30px;
+}
+.bottom{
+    background-color: rgb(192, 44, 44);
+    color : white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration:none;
+    font-family: "Roboto";
+}
+.linkelement{
+    color : white;
+    text-decoration: none;
+}
+.linkelement:hover{
+    color:blue;
+    text-decoration: underline;
+}
