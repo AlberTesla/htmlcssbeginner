@@ -38,21 +38,17 @@
             .videoAuthor {
                 display: block;
                 font-size: 12px;
+                margin-top: 10px;
             }
             .videoStats {
                 display: block;
                 font-size: 12px;
+                margin-top: 10px;
             }
             .grid {
                 display: grid;
                 grid-template-columns : 50px 1fr;
                 height : 100px;
-            }
-            .channelPicture {
-                background-color: gray;
-            }
-            .videoInfo {
-                background-color: grey;
             }
             .videoTitle {
                 font-size : 14px;
@@ -71,7 +67,16 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: stretch;
-                height : 50px;
+                height : 55px;
+                position: fixed;
+                top : 0;
+                left : 0;
+                right : 0;
+                background-color: white;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color : rgb(233, 230, 230);
+                z-index: 10;
             }
             .leftSection {
                 display: flex;
@@ -143,10 +148,60 @@
                 height: 32px;
                 border-radius: 16px;
             }
+            .sidebar{
+                position : fixed;
+                left : 0;
+                width: 72px;
+                top: 45px;
+                bottom : 0;
+                z-index: 0;
+                padding-top: 5px;
+            }
+            .videoInfo { 
+                margin-left: 10px;
+            }
+            .thumbnailRow {
+                position : relative;
+            }
+            .time {
+                position : absolute;
+                right : 10px;
+                bottom : 10px;
+                background-color: black;
+                color : white;
+                font-family: roboto, Arial;
+                font-size : 12px;
+                font-weight: 500;
+                padding : 2px;
+                border-radius : 2px;
+            }
+            .sidebarLink {
+                background-color: rgb(236, 229, 229);
+                height: 77px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                cursor: pointer;
+            }
+            .sidebarLink:hover {
+                background-color: rgb(187, 184, 184);
+                height: 77px;
+            }
+            .sidebarLink img {
+                width : 24px;
+                margin-bottom: 4px;
+            }
+            .sidebar div {
+                font-family: robot, arial;
+                font-size: 10px;
+            }
         </style>
     </head>
     <body style="padding-bottom: 1000px;
-    margin: 0px;">
+        margin: 0px;
+        padding-top: 80px;
+        padding-left: 100px;">
     <div class="topBar">
         <div class="leftSection">
             <img class="hamburgerMenu" src="images/hamburger-menu.svg">
@@ -164,14 +219,56 @@
         <div class="rightSection">
             <img class="uploadIcon" src="images/upload.svg">
             <img class="gridIcon" src="images/youtube-apps.svg">
-            <img class="notificIcon" src="images/notifications.svg">
+            <div style="position : relative;">
+                <img class="notificIcon" src="images/notifications.svg">
+                <div style="position: absolute;
+                    background-color: rgb(160, 16, 16);
+                    padding-left : 4px;
+                    padding-right: 4px;
+                    padding-top: 1px;
+                    padding-bottom : 1px;
+                    border-radius: 10px;
+                    font-family: roboto, Arial;
+                    font-size: 12px;
+                    top : -2px;
+                    right : -2px;
+                    color: white;
+                ">3</div>
+            </div>
             <img class="mychannel" src="images/my-channel.jpeg">
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebarLink">
+            <img src="images/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebarLink">
+            <img src="images/explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebarLink">
+            <img src="images/subscriptions.svg">
+            <div>Youtube Music</div>
+        </div>
+        <div class="sidebarLink">
+            <img src="images/originals.svg">
+            <div>Originals</div>
+        </div>
+        <div class="sidebarLink">
+            <img src="images/youtube-music.svg">
+            <div>Youtube Music</div>
+        </div>
+        <div class="sidebarLink">
+            <img src="images/library.svg">
+            <div>Library</div>
         </div>
     </div>
         <div class="mainGrid">
             <div class="videoPreview">
                 <div class="thumbnailRow">
                     <img class="thumbnail" src="images\thumbnail-1.webp">
+                    <div class="time">5:00</div>
                 </div>
                 <div class="grid">
                     <div class="channelPicture">
@@ -193,6 +290,7 @@
             <div class="videoPreview">
                 <div class="thumbnailRow">
                     <img class="thumbnail" src="images\thumbnail-2.webp">
+                    <div class="time">5:00</div>
                 </div>
                 <div class="grid">
                     <div class="channelPicture">
@@ -214,6 +312,7 @@
             <div class="videoPreview">
                 <div class="thumbnailRow">
                     <img class="thumbnail" src="images\thumbnail-1.webp">
+                    <div class="time">5:00</div>
                 </div>
                 <div class="grid">
                     <div class="channelPicture">
@@ -235,6 +334,7 @@
             <div class="videoPreview">
                 <div class="thumbnailRow">
                     <img class="thumbnail" src="images\thumbnail-2.webp">
+                    <div class="time">5:00</div>
                 </div>
                 <div class="grid">
                     <div class="channelPicture">
@@ -256,6 +356,7 @@
             <div class="videoPreview">
                 <div class="thumbnailRow">
                     <img class="thumbnail" src="images\thumbnail-1.webp">
+                    <div class="time">5:00</div>
                 </div>
                 <div class="grid">
                     <div class="channelPicture">
@@ -277,6 +378,7 @@
             <div class="videoPreview">
                 <div class="thumbnailRow">
                     <img class="thumbnail" src="images\thumbnail-2.webp">
+                    <div class="time">5:00</div>
                 </div>
                 <div class="grid">
                     <div class="channelPicture">
